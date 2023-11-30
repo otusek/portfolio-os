@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="oskar tarka">
+        <a class="a1" href="index.html"><i class="fa fa-home"></i> Strona główna</a>
+        <a class="a2" href="kontakt.html"><i class="fa fa-envelope"></i> kontakt</a>
+        <button onclick="pokaz()" class="a3"><i class="fa fa-tablet"></i> portale spolecznosciowe</button>
+        <a class="a4" href="#"><i class="fa fa-user"></i> o mnie</a>
+        <a class="a5" href="cv.pdf" download="cv.pdf"><i class="fa fa-cloud-download"><button class="download">POBIERZ CV</button></i></a>
+    </nav>
+    <script>
+    function pokaz() {
+        var ukryteBatony = document.getElementById('ukryteBatony');
+        ukryteBatony.style.display = (ukryteBatony.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    </script>
+    <div id="ukryteBatony">
+        <a target="_blank" href="https://twitter.com/tyrt000"><i class="fa fa-twitter social-icon"></i></a>
+        <a href="https://www.youtube.com/channel/UCSnD5-M9vsFTg9A9RwL1MYg" target="_blank"><i class="fa fa-youtube-play social-icon"></i></a>
+        <a href="https://www.instagram.com/otusekk_dsdd/" target="_blank"><i class="fa fa-instagram social-icon"></i></a>
+        <a href="https://github.com/otusek" target="_blank"><i class="fa fa-github social-icon"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010890853831&locale=pl_PL" class="social-button"><i class="fa fa-facebook social-icon"></i></a>
+    </div>
+    <h1 class="welcome11">Cześć! Jestem Oliwier Stajniak</h1>
+    <article>
+        <h2>15-latek z pasją do technologii i programowania. Obecnie uczę się na kierunku Technik Programista w TEB Edukacja Gliwice, gdzie rozwijam swoje umiejętności związane z tworzeniem oprogramowania. Pracuję zarówno w środowisku Ubuntu, jak i Windows, posiadając solidną wiedzę na temat różnych systemów komputerowych.
+
+            Moje zainteresowania są różnorodne. Uwielbiam muzykę, która dla mnie stanowi nieodłączny element życia. Gdy nie zajmuję się kodowaniem, można mnie znaleźć na boisku koszykarskim lub pływającym w basenie. Gry komputerowe to kolejny obszar, w którym odnajduję wiele radości i inspiracji.
+            
+            Nie tylko świat technologii jest mi bliski - z pasją poszerzam swoje horyzonty językowe. Język angielski towarzyszy mi nie tylko w nauce, ale również w codziennym życiu. Posiadam dyplom z angielskiego na poziomie B1, zdobyty z oceną bardzo dobbrą.
+            
+            Zapraszam do odkrywania mojego portfolio, gdzie dzielę się projektami, doświadczeniami i pasjami, które kształtują moją drogę w świecie programowania i nie tylko.</h2>
+    </article>
+    <div class="przyciemniacz"></div>
+    <footer>
+
+        <center>&copy; Copyright 2023. All rights reserved.</center>
+
+    </footer>
+</body>
+</html>

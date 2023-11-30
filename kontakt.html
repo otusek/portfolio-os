@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/current/metro.css">
+    <link rel="stylesheet" href="style3.css">
+    <title>Kontakt!</title>
+</head>
+<body>
+    <script src="https://cdn.metroui.org.ua/current/metro.js"></script>
+    <nav>
+        <img src="logo.png" alt="oskar tarka">
+        <a class="a1" href="index.html"><i class="fa fa-home"></i> Strona główna</a>
+        <a class="a2" href="#"><i class="fa fa-envelope"></i> kontakt</a>
+        <button onclick="pokaz()" class="a3"><i class="fa fa-tablet"></i> portale spolecznosciowe</button>
+        <a class="a4" href="omnie.html"><i class="fa fa-user"></i> o mnie</a>
+        <a class="a5" href="cv.pdf" download="cv.pdf"><i class="fa fa-cloud-download"><button class="download">POBIERZ CV</button></i></a>
+    </nav>
+    <script>
+    function pokaz() {
+        var ukryteBatony = document.getElementById('ukryteBatony');
+        ukryteBatony.style.display = (ukryteBatony.style.display === 'flex') ? 'none' : 'flex';
+    }
+
+    </script>
+    <div id="ukryteBatony">
+        <a target="_blank" href="https://twitter.com/tyrt000"><i class="fa fa-twitter social-icon"></i></a>
+        <a href="https://www.youtube.com/channel/UCSnD5-M9vsFTg9A9RwL1MYg" target="_blank"><i class="fa fa-youtube-play social-icon"></i></a>
+        <a href="https://www.instagram.com/otusekk_dsdd/" target="_blank"><i class="fa fa-instagram social-icon"></i></a>
+        <a href="https://github.com/otusek" target="_blank"><i class="fa fa-github social-icon"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100010890853831&locale=pl_PL" class="social-button"><i class="fa fa-facebook social-icon"></i></a>
+    </div>
+
+    <form action="https://formsubmit.co/e3e4ba33ca1efbddbb2593dd0c3212d7" method="post">
+        <label for="name">Twoje imie i naziwsko:</label><br> <input  placeholder="Jan Kowalski" type="text" name="name" required> <br>
+        <label for="email">Twoj mail:</label><br><input placeholder="jan.kowalski@mail.com" type="mail" name="email" required> <br>
+        <label for="message">Twoja wiadomość:</label><br><textarea name="message" id="" cols="30" rows="3" placeholder="Dzien dobry/dobry wieczor..."></textarea> <br>
+        <button class="send" type="submit">Wyślij!</button>
+        <button class="reset" type="reset">Anuluj</button>
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <div class="przyciemniacz"></div>
+    <footer>
+
+        <center>&copy; Copyright 2023. All rights reserved.</center>
+
+    </footer>
+</body>
+</html>
